@@ -2640,7 +2640,7 @@ function Tab:AddDiscordInvite(Configs)
 	local BannerArea = Create("ImageLabel", MainFrame, {
 		Size = UDim2.new(1, 0, 0.28, 0),
 		Image = BannerImage,
-		BackgroundColor3 = Color3.fromRGB(88, 101, 242),
+		BackgroundColor3 = Color3.fromRGB(255, 0, 60),
 		BackgroundTransparency = BannerImage ~= "" and 1 or 0,
 		ScaleType = Enum.ScaleType.Crop
 	})
@@ -2781,7 +2781,7 @@ function Tab:AddDiscordInvite(Configs)
 		Text = "Join Server",
 		Font = Enum.Font.GothamBold,
 		TextSize = 10,
-		BackgroundColor3 = Color3.fromRGB(67, 181, 129),
+		BackgroundColor3 = Color3.fromRGB(255, 0, 60),
 		TextColor3 = Theme["Color Text"]
 	}), "Text")
 	Make("Corner", JoinButton, UDim.new(0.5, 0))
@@ -2894,7 +2894,7 @@ end
 				Font = Enum.Font.GothamBold,
 				TextSize = 12,
 				TextColor3 = Color3.fromRGB(220, 220, 220),
-				BackgroundColor3 = Color3.fromRGB(50, 150, 50)
+				BackgroundColor3 = Color3.fromRGB(255, 0, 60)
 			})Make("Corner", JoinButton, UDim.new(0, 5))
 			
 			local ClickDelay
@@ -2910,7 +2910,7 @@ end
 				})task.wait(5)
 				SetProps(JoinButton, {
 					Text = "Join Server",
-					BackgroundColor3 = Color3.fromRGB(50, 150, 50),
+					BackgroundColor3 = Color3.fromRGB(255, 0, 60),
 					TextColor3 = Color3.fromRGB(220, 220, 220)
 				})ClickDelay = false
 			end)
@@ -2931,3 +2931,4 @@ end
 
 
 return redzlib
+
