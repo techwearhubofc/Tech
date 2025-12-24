@@ -1584,12 +1584,12 @@ function redzlib:MakeWindow(Configs)
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
 			Title = "Close",
-			Text = "You Want Close Ui?",
+			Text = "Tem Certeza que deseja fechar o Techwear Hub? Pode acabar interferindo em funções importantes!",
 			Options = {
-				{"Confirm", function()
+				{"Confirmar", function()
 					ScreenGui:Destroy()
 				end},
-				{"Cancel"}
+				{"Cancelar"}
 			}
 		})
 	end
@@ -2931,4 +2931,5 @@ end
 
 
 return redzlib
+
 
